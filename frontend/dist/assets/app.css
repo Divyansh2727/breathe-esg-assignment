@@ -1,0 +1,77 @@
+:root {
+  --bg: #0f1419;
+  --surface: #1a2332;
+  --surface-2: #243044;
+  --border: #2d3f56;
+  --text: #e8eef4;
+  --muted: #8ba3bc;
+  --accent: #3dd6c3;
+  --warn: #f4a261;
+  --danger: #e76f51;
+  --ok: #52b788;
+  --pending: #4ea8de;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "DM Sans", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+a { color: var(--accent); text-decoration: none; }
+button, input, select, textarea {
+  font-family: inherit;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+}
+button { cursor: pointer; border: none; }
+.btn { border-radius: 6px; padding: 0.5rem 1rem; font-weight: 600; font-size: 0.875rem; }
+.btn-primary { background: var(--accent); color: #0f1419; }
+.btn-secondary { background: var(--surface-2); color: var(--text); }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.badge-pending { background: rgba(78,168,222,.2); color: var(--pending); }
+.badge-suspicious { background: rgba(244,162,97,.2); color: var(--warn); }
+.badge-failed { background: rgba(231,111,81,.2); color: var(--danger); }
+.badge-approved { background: rgba(82,183,136,.2); color: var(--ok); }
+.badge-locked { background: rgba(139,163,188,.2); color: var(--muted); }
+header {
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--surface);
+}
+nav a { color: var(--text); margin-right: 1rem; }
+nav a.active { color: var(--accent); font-weight: 600; }
+main { padding: 1.5rem; max-width: 1200px; margin: 0 auto; }
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+th, td { padding: 0.5rem; text-align: left; }
+tr { border-top: 1px solid var(--border); cursor: pointer; }
+tr.selected { background: var(--surface-2); }
+.review-grid { display: grid; grid-template-columns: 1fr 340px; gap: 1rem; }
+.error { color: var(--danger); }
+.ok { color: var(--ok); }

@@ -1,0 +1,6 @@
+Account Number,Meter ID,Service Address,Bill Period Start,Bill Period End,Usage,Units,Rate Schedule,Total Charges
+ACC-77821-001,MTR-99210-A,"100 Industrial Blvd, Austin TX",2024-12-18,2025-01-17,145230,kWh,GS-TOU-Commercial,17427.60
+ACC-77821-002,MTR-99210-B,"200 Warehouse Dr, Austin TX",2024-12-05,2025-01-04,89200,kWh,GS-Flat-Small,9812.00
+ACC-77821-001,MTR-99210-A,"100 Industrial Blvd, Austin TX",2025-01-18,2025-02-19,152890,kWh,GS-TOU-Commercial,18346.80
+ACC-99102-003,MTR-44102-C,"Berlin HQ Friedrichstr",2025-01-01,2025-01-31,67800,kWh,DE-Commercial-2024,10848.00
+ACC-99102-004,MTR-44102-D,"Munich Plant Gate 2",2024-11-28,2025-01-02,121500,kWh,DE-Industrial,19440.00

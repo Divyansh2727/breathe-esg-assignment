@@ -1,0 +1,28 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: breathe
+      POSTGRES_USER: breathe
+      POSTGRES_PASSWORD: breathe
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U breathe -d breathe"]
+      interval: 2s
+      timeout: 5s
+      retries: 15
+      start_period: 5s
+
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgres://breathe:breathe@db:5432/breathe
+      DJANGO_DEBUG: "true"
+      DJANGO_ALLOWED_HOSTS: localhost,127.0.0.1
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: on-failure

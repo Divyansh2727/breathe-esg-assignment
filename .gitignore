@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.sqlite3
+db.sqlite3
+node_modules/
+# frontend/dist/ is committed for Docker builds on networks that block registry.npmjs.org
+backend/staticfiles/
+.venv/
+venv/
+*.pem
+*.key

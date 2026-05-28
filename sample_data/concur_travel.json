@@ -1,0 +1,66 @@
+{
+  "reportId": "764428DD6A664AF0BFCB",
+  "reportName": "Q1 2025 — EMEA Sales Trip",
+  "expenses": [
+    {
+      "id": "84A2FD163A1",
+      "transactionDate": "2025-02-03",
+      "expenseType": { "name": "Airfare" },
+      "transactionAmount": { "value": 842.50, "currencyCode": "EUR" },
+      "orgUnit1": "1000",
+      "travel": {
+        "startLocation": "BER",
+        "endLocation": "MUC",
+        "ticketNumber": "LH-4829102",
+        "airlineServiceClassCode": "ECONOMY",
+        "departureDate": "2025-02-03"
+      }
+    },
+    {
+      "id": "84A2FD163A2",
+      "transactionDate": "2025-02-03",
+      "expenseType": { "name": "Hotel" },
+      "transactionAmount": { "value": 456.00, "currencyCode": "EUR" },
+      "travel": {
+        "hotelCheckinDate": "2025-02-03",
+        "hotelCheckoutDate": "2025-02-06",
+        "hotelName": "Marriott Munich City"
+      }
+    },
+    {
+      "id": "84A2FD163A3",
+      "transactionDate": "2025-02-07",
+      "expenseType": { "name": "Ground Transportation" },
+      "transactionAmount": { "value": 67.20, "currencyCode": "EUR" },
+      "travel": {
+        "startLocation": "Munich Hbf",
+        "endLocation": "Munich Airport",
+        "carRentalDays": 0
+      }
+    },
+    {
+      "id": "84A2FD163A4",
+      "transactionDate": "2025-02-10",
+      "expenseType": { "name": "Airfare" },
+      "transactionAmount": { "value": 1240.00, "currencyCode": "USD" },
+      "travel": {
+        "startLocation": "AUS",
+        "endLocation": "JFK",
+        "flightDistance": 2475,
+        "ticketNumber": "AA-9918234",
+        "airlineServiceClassCode": "BUSINESS"
+      }
+    },
+    {
+      "id": "84A2FD163A5",
+      "transactionDate": "2025-02-12",
+      "expenseType": { "name": "Car Rental" },
+      "transactionAmount": { "value": 312.00, "currencyCode": "USD" },
+      "travel": {
+        "carRentalDays": 4,
+        "startLocation": "JFK Airport",
+        "endLocation": "JFK Airport"
+      }
+    }
+  ]
+}
